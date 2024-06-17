@@ -45,6 +45,7 @@ def main():
         if not len(dataNeedProcess):
             tfs_alive_status = [tf.is_alive() for tf in tfs]
             if not True in tfs_alive_status:
+                print("finished all data .....")
                 exit()
         time.sleep(1)
 
