@@ -36,7 +36,7 @@ def main():
         
         for tfIdx,tf in enumerate(tfs):
             tfs_alive_status[tfIdx] = tf.is_alive()
-            print(f'[main]  {tfIdx} alive ?'tfs_alive_status[tfIdx])
+            print(f'[main]  {tfIdx} alive ?',tfs_alive_status[tfIdx])
             if not tfs_alive_status[tfIdx]:
                 if len(dataNeedProcess):
                     tfs[tfIdx] = createQ(dataNeedProcess[0])
