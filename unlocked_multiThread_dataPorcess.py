@@ -1,3 +1,12 @@
+
+'''
+Implement of unlocked multi process for data pool 
+
+Parameter:
+dataProcessOnce : processer number
+
+'''
+
 # Using queue and threading for unlocked data distribution
 from tqdm import tqdm
 import os,glob
